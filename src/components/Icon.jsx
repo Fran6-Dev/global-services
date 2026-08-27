@@ -32,6 +32,21 @@ import {
   ArrowRight,
   UploadCloud,
   Square,
+  AlertTriangle,
+  Cpu,
+  Disc,
+  Flame,
+  BatteryFull,
+  Syringe,
+  Sprout,
+  Waves,
+  Mountain,
+  TrendingUp,
+  Trees,
+  Boxes,
+  Wheat,
+  Armchair,
+  PackagePlus,
 } from 'lucide-react'
 
 const MAP = {
@@ -76,6 +91,21 @@ const MAP = {
   arrowRight: ArrowRight,
   check: CheckCircle2,
   upload: UploadCloud,
+  danger: AlertTriangle,
+  electronique: Cpu,
+  pneu: Disc,
+  gaz: Flame,
+  batterie: BatteryFull,
+  medical: Syringe,
+  solmeuble: Sprout,
+  solargileux: Waves,
+  solrocheux: Mountain,
+  terrainpente: TrendingUp,
+  terrainencombre: Trees,
+  palette: Boxes,
+  agricole: Wheat,
+  mobilier: Armchair,
+  diverses: PackagePlus,
 }
 
 export default function Icon({ name, className = 'h-6 w-6', strokeWidth = 1.75 }) {

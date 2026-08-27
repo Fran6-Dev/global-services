@@ -108,7 +108,7 @@ export const whyUs = [
   },
   {
     title: 'Expérience',
-    text: '15 à 18 ans d’expérience cumulée des fondateurs.',
+    text: '15 ans d’expérience cumulée des fondateurs.',
     icon: 'experience',
   },
   {
@@ -121,18 +121,16 @@ export const whyUs = [
     text: 'Des solutions adaptées aux particuliers et aux professionnels.',
     icon: 'pourtous',
   },
-]
-
-export const homeStats = [
-  { label: 'Nouvelle entreprise', icon: 'star' },
-  { label: '15 - 18 ans d’expérience cumulée', icon: 'clock' },
-  { label: '5 000 m³ de stockage disponible', icon: 'box' },
-  { label: 'Partout en France', icon: 'pin' },
+  {
+    title: 'Partout en France',
+    text: 'Basés dans le Loiret, nous intervenons dans toute la France.',
+    icon: 'pin',
+  },
 ]
 
 export const aboutStats = [
-  { label: 'Nouvelle entreprise', icon: 'star' },
-  { label: '15 - 18 ans d’expérience cumulée', icon: 'clock' },
+  { label: '4 métiers réunis', icon: 'polyvalence' },
+  { label: '15 ans d’expérience cumulée', icon: 'clock' },
   { label: 'Loiret et partout en France', icon: 'pin' },
   { label: 'Particuliers et professionnels', icon: 'users' },
 ]
@@ -140,7 +138,7 @@ export const aboutStats = [
 export const values = [
   { title: 'Priorité', text: 'Une entreprise implantée localement, proche de ses clients.', icon: 'priorite' },
   { title: 'Réactivité', text: 'Des réponses rapides et des solutions adaptées à chaque demande.', icon: 'reactivite' },
-  { title: 'Expérience', text: '15 à 18 ans d’expérience cumulée des fondateurs.', icon: 'experience' },
+  { title: 'Expérience', text: '15 ans d’expérience cumulée des fondateurs.', icon: 'experience' },
   { title: 'Fiabilité', text: 'Respect des engagements pris et des délais annoncés.', icon: 'fiabilite' },
   { title: 'Polyvalence', text: 'Bennes, terrassement, transport et stockage disponibles pour plusieurs solutions réunies.', icon: 'polyvalence' },
 ]
@@ -181,6 +179,38 @@ export const wasteAccepted = [
   { label: 'Déchets d’évacuation', icon: 'evacuation' },
 ]
 
+export const wasteRefused = [
+  { label: 'Déchets dangereux', icon: 'danger' },
+  { label: 'Déchets électroniques (DEEE)', icon: 'electronique' },
+  { label: 'Pneus', icon: 'pneu' },
+  { label: 'Bouteilles de gaz', icon: 'gaz' },
+  { label: 'Batteries', icon: 'batterie' },
+  { label: 'Déchets médicaux', icon: 'medical' },
+]
+
+export const bennesSteps = [
+  {
+    title: 'Vous nous contactez',
+    text: 'Par téléphone ou via notre formulaire de devis, indiquez-nous vos besoins.',
+  },
+  {
+    title: 'Nous vous conseillons',
+    text: 'Nous vous orientons vers la taille de benne la plus adaptée à votre chantier.',
+  },
+  {
+    title: 'Livraison sur site',
+    text: 'La benne est livrée à l’adresse et à la date convenues.',
+  },
+  {
+    title: 'Vous remplissez à votre rythme',
+    text: 'Aucune contrainte de temps : vous disposez de la benne le temps nécessaire.',
+  },
+  {
+    title: 'Enlèvement et traitement',
+    text: 'Nous récupérons la benne et assurons le traitement des déchets.',
+  },
+]
+
 export const bennesSizes = [
   { size: '5 × 10 m³', text: 'Pour les volumes importants de déchets issus de vos chantiers.' },
   { size: '4 × 7 m³', text: 'Le format le plus polyvalent, adapté à la majorité des besoins.' },
@@ -190,6 +220,80 @@ export const bennesSizes = [
 export const excavators = [
   { count: '3 pelles', size: '3,5 tonnes', text: 'Pour différents travaux de préparation de terrain.' },
   { count: '1 pelle', size: '6 tonnes', text: 'Pour les travaux nécessitant davantage de puissance et de capacité.' },
+]
+
+export const terrassementPrestations = [
+  {
+    title: 'Préparation de terrain',
+    text: 'Décapage, débroussaillage et mise à niveau avant construction ou aménagement.',
+    icon: 'chantier',
+  },
+  {
+    title: 'Nivellement',
+    text: 'Aplanissement du sol pour garantir une base stable à vos projets (dallage, terrasse, extension).',
+    icon: 'surface',
+  },
+  {
+    title: 'Fouilles et tranchées',
+    text: 'Creusement précis pour fondations, réseaux (eau, électricité, assainissement) ou drainage.',
+    icon: 'pelle',
+  },
+  {
+    title: 'Évacuation de terre',
+    text: 'Enlèvement et transport des déblais issus de vos travaux de terrassement.',
+    icon: 'evacuation',
+  },
+]
+
+export const terrassementSteps = [
+  {
+    title: 'Vous nous contactez',
+    text: 'Décrivez votre projet : type de travaux, superficie, contraintes du terrain.',
+  },
+  {
+    title: 'Étude de votre projet',
+    text: 'Nous analysons vos besoins et, si nécessaire, planifions une visite sur site.',
+  },
+  {
+    title: 'Devis personnalisé',
+    text: 'Vous recevez une proposition adaptée à la nature du sol et à l’ampleur des travaux.',
+  },
+  {
+    title: 'Intervention',
+    text: 'Nos équipes interviennent avec le matériel adapté (pelle de 3,5 ou 6 tonnes selon les besoins).',
+  },
+  {
+    title: 'Finition et remise en état',
+    text: 'Le terrain est livré prêt à l’emploi pour la suite de votre projet.',
+  },
+]
+
+export const terrassementSols = [
+  {
+    title: 'Sols meubles',
+    text: 'Terre végétale, sable, limon : idéal pour les travaux de nivellement et de préparation rapide.',
+    icon: 'solmeuble',
+  },
+  {
+    title: 'Sols argileux',
+    text: 'Adaptation de nos méthodes pour les terrains compacts et sensibles à l’humidité.',
+    icon: 'solargileux',
+  },
+  {
+    title: 'Sols rocheux ou caillouteux',
+    text: 'Intervention avec des équipements renforcés pour les terrains difficiles à excaver.',
+    icon: 'solrocheux',
+  },
+  {
+    title: 'Terrains en pente',
+    text: 'Nivellement et stabilisation pour rendre le terrain exploitable.',
+    icon: 'terrainpente',
+  },
+  {
+    title: 'Terrains encombrés',
+    text: 'Débroussaillage et déblaiement avant intervention (végétation, anciennes structures).',
+    icon: 'terrainencombre',
+  },
 ]
 
 export const transportSolutions = [
@@ -225,6 +329,57 @@ export const transportSolutions = [
   },
 ]
 
+export const transportMarchandises = [
+  {
+    title: 'Marchandises palettisées',
+    text: 'Transport de palettes pour professionnels, commerces et industries.',
+    icon: 'palette',
+  },
+  {
+    title: 'Matériaux de construction',
+    text: 'Livraison de matériaux lourds ou volumineux directement sur chantier.',
+    icon: 'chantier',
+  },
+  {
+    title: 'Produits agricoles',
+    text: 'Transport de récoltes, fourrage, ou intrants pour les exploitations agricoles.',
+    icon: 'agricole',
+  },
+  {
+    title: 'Mobilier et équipements professionnels',
+    text: 'Déménagement de bureaux, ateliers ou locaux commerciaux.',
+    icon: 'mobilier',
+  },
+  {
+    title: 'Marchandises diverses',
+    text: 'Une solution sur-mesure est étudiée pour tout autre type de chargement.',
+    icon: 'diverses',
+  },
+]
+
+export const transportSteps = [
+  {
+    title: 'Vous nous contactez',
+    text: 'Décrivez votre besoin : nature du chargement, poids, dimensions, lieu de départ et d’arrivée.',
+  },
+  {
+    title: 'Étude de votre demande',
+    text: 'Nous identifions la solution de transport la plus adaptée (porte-plateau, grue, remorque bâchée...).',
+  },
+  {
+    title: 'Devis et planification',
+    text: 'Vous recevez une proposition avec un créneau de transport adapté à vos contraintes.',
+  },
+  {
+    title: 'Prise en charge',
+    text: 'Chargement sécurisé de votre matériel ou marchandise selon les normes en vigueur.',
+  },
+  {
+    title: 'Livraison',
+    text: 'Acheminement jusqu’à destination, dans le respect des délais convenus.',
+  },
+]
+
 export const stockageFeatures = [
   { label: '5 000 m² de terrain', icon: 'surface' },
   { label: 'Accès facile', icon: 'acces' },
@@ -232,12 +387,65 @@ export const stockageFeatures = [
   { label: 'Solution flexible : ponctuelle ou régulière', icon: 'flexible' },
 ]
 
+export const stockageSteps = [
+  {
+    title: 'Vous nous contactez',
+    text: 'Décrivez-nous votre besoin : type de matériel, volume estimé, durée souhaitée.',
+  },
+  {
+    title: 'Étude de votre demande',
+    text: 'Nous vérifions nos disponibilités et vous proposons l’espace adapté à votre besoin.',
+  },
+  {
+    title: 'Dépôt de votre matériel',
+    text: 'Vous déposez vos engins, matériaux ou marchandises sur l’emplacement convenu.',
+  },
+  {
+    title: 'Stockage en toute tranquillité',
+    text: 'Votre matériel reste sur site le temps nécessaire, ponctuel ou régulier.',
+  },
+  {
+    title: 'Retrait',
+    text: 'Vous récupérez votre matériel selon vos disponibilités, en nous prévenant à l’avance.',
+  },
+]
+
+export const stockageStorables = [
+  {
+    title: 'Engins et véhicules',
+    text: 'Pelles, engins de chantier, véhicules professionnels ou agricoles.',
+    icon: 'pelle',
+  },
+  {
+    title: 'Matériaux de construction',
+    text: 'Stocks de matériaux, palettes, structures temporaires.',
+    icon: 'chantier',
+  },
+  {
+    title: 'Marchandises professionnelles',
+    text: 'Stocks saisonniers, surplus, matériel en attente de livraison.',
+    icon: 'diverses',
+  },
+  {
+    title: 'Bennes et conteneurs',
+    text: 'Stockage temporaire de bennes ou conteneurs vides.',
+    icon: 'benne',
+  },
+]
+
+export const stockageSecurity = [
+  'Terrain clôturé et accès contrôlé',
+  'Surface plate facilitant la manœuvre et le stationnement',
+  'Accès facile pour les véhicules lourds et remorques',
+  'Suivi personnalisé de chaque dépôt',
+]
+
 export const satisfactionPoints = [
   { title: 'Sécurité', text: 'La sécurité de nos équipes et de nos clients avant toute chose sur chaque intervention.', icon: 'securite' },
   { title: 'Qualité', text: 'Des prestations et des équipements soignés, à la hauteur de vos attentes.', icon: 'qualite' },
   { title: 'Respect des délais', text: 'Des interventions planifiées et tenues, sans mauvaise surprise.', icon: 'delais' },
   { title: 'Transparence', text: 'Des devis clairs, précis et sans surprise pour chacune de vos demandes.', icon: 'transparence' },
-  { title: 'Environnement', text: 'Une gestion responsable et raisonnée des déchets et du matériel utilisé.', icon: 'environnement' },
+  { title: 'Environnement', text: 'Tri sélectif des déchets et recours à des centres de traitement agréés pour leur valorisation.', icon: 'environnement' },
 ]
 
 export const galleryCategories = ['Tous', 'Bennes', 'Terrassement', 'Transport', 'Stockage']

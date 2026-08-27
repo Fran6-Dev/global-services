@@ -1,5 +1,13 @@
 import { Link } from 'react-router-dom'
-import { terrassementImage, excavators } from '../../data/content.js'
+import Icon from '../../components/Icon.jsx'
+import IconFeature from '../../components/IconFeature.jsx'
+import {
+  terrassementImage,
+  excavators,
+  terrassementPrestations,
+  terrassementSteps,
+  terrassementSols,
+} from '../../data/content.js'
 
 export default function ServiceTerrassement() {
   return (
@@ -26,6 +34,58 @@ export default function ServiceTerrassement() {
     }}
   />
 </div>
+        </div>
+      </section>
+
+      {/* Nos prestations de terrassement */}
+      <section className="bg-cloud py-16">
+        <div className="container-page">
+          <h2 className="text-center text-2xl text-ink md:text-3xl">Nos prestations de terrassement</h2>
+          <div className="mt-12 grid grid-cols-2 gap-x-6 gap-y-12 sm:grid-cols-4">
+            {terrassementPrestations.map((item) => (
+              <IconFeature key={item.title} {...item} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Comment ça marche ? */}
+      <section className="py-16">
+        <div className="container-page">
+          <h2 className="text-center text-2xl text-ink md:text-3xl">Comment ça marche ?</h2>
+          <div className="mx-auto mt-10 grid max-w-5xl grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-5">
+            {terrassementSteps.map((step, i) => (
+              <div key={step.title} className="flex flex-col items-center text-center">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-brand font-heading text-sm font-bold text-white">
+                  {i + 1}
+                </div>
+                <p className="mt-4 font-heading text-sm font-bold text-ink">{step.title}</p>
+                <p className="mt-2 text-sm leading-relaxed text-ink/60">{step.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Types de sols et terrains traités */}
+      <section className="bg-cloud py-16">
+        <div className="container-page">
+          <h2 className="text-center text-2xl text-ink md:text-3xl">Types de sols et terrains traités</h2>
+          <div className="mx-auto mt-10 flex max-w-3xl flex-col divide-y divide-mist border-t border-b border-mist">
+            {terrassementSols.map((s) => (
+              <div key={s.title} className="flex items-start gap-4 py-5">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand/10">
+                  <Icon name={s.icon} className="h-5 w-5 text-brand" strokeWidth={1.75} />
+                </span>
+                <div>
+                  <h3 className="font-heading text-sm font-bold uppercase tracking-wide text-ink">
+                    {s.title}
+                  </h3>
+                  <p className="mt-1 text-sm leading-relaxed text-ink/60">{s.text}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

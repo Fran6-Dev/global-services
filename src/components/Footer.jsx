@@ -28,8 +28,8 @@ export default function Footer() {
         <div>
           <Logo light />
           <p className="mt-5 max-w-xs text-sm leading-relaxed">
-            Une nouvelle entreprise portée par deux professionnels avec 15 à 18 ans
-            d’expérience chacun dans le domaine.
+            Votre interlocuteur unique pour vos travaux de bennes, terrassement,
+            transport et stockage — dans le Loiret et partout en France.
           </p>
           <div className="mt-6 flex gap-3">
             {socials.map((s) => (

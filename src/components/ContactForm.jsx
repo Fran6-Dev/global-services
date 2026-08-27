@@ -1,7 +1,16 @@
 import { useState } from 'react'
 import Icon from './Icon.jsx'
 
-const initial = { name: '', phone: '', email: '', message: '' }
+const initial = { name: '', phone: '', email: '', service: '', message: '' }
+
+const serviceOptions = [
+  'Location de bennes',
+  'Terrassement',
+  'Transport / Élevage',
+  'Stockage',
+  'Plusieurs services',
+  'Autre demande',
+]
 
 export default function ContactForm() {
   const [values, setValues] = useState(initial)
@@ -81,6 +90,28 @@ export default function ContactForm() {
         />
       </div>
       <div className="flex flex-col gap-1.5">
+        <label htmlFor="service" className="text-xs font-semibold tracking-wide text-ink/60">
+          SERVICE CONCERNÉ
+        </label>
+        <select
+          id="service"
+          name="service"
+          required
+          value={values.service}
+          onChange={onChange}
+          className="border border-mist bg-white px-4 py-3 text-sm outline-none focus:border-brand"
+        >
+          <option value="" disabled>
+            Sélectionnez un service
+          </option>
+          {serviceOptions.map((option) => (
+            <option key={option} value={option}>
+              {option}
+            </option>
+          ))}
+        </select>
+      </div>
+      <div className="flex flex-col gap-1.5">
         <label htmlFor="message" className="text-xs font-semibold tracking-wide text-ink/60">
           VOTRE MESSAGE
         </label>
@@ -97,6 +128,9 @@ export default function ContactForm() {
       <button type="submit" disabled={status === 'sending'} className="btn btn-primary self-start">
         {status === 'sending' ? 'Envoi en cours…' : 'Envoyer ma demande'}
       </button>
+      <p className="text-xs text-ink/50">
+        Nous nous engageons à vous répondre sous 24h ouvrées.
+      </p>
     </form>
   )
 }

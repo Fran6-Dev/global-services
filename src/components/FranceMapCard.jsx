@@ -21,9 +21,9 @@ export default function FranceMapCard() {
             key={dep.id}
             d={dep.path}
             fill={dep.id === HIGHLIGHT_ID ? '#e2231a' : '#ffffff'}
-            fillOpacity={dep.id === HIGHLIGHT_ID ? 0.18 : 1}
-            stroke={dep.id === HIGHLIGHT_ID ? '#e2231a' : '#d3d3d6'}
-            strokeWidth={dep.id === HIGHLIGHT_ID ? 1.6 : 0.6}
+            fillOpacity={dep.id === HIGHLIGHT_ID ? 0.28 : 1}
+            stroke={dep.id === HIGHLIGHT_ID ? '#e2231a' : '#aeaeb4'}
+            strokeWidth={dep.id === HIGHLIGHT_ID ? 2 : 0.85}
             strokeLinejoin="round"
           />
         ))}

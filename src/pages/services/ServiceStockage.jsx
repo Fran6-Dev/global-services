@@ -1,8 +1,12 @@
 import CTABand from "../../components/CTABand.jsx";
 import Icon from "../../components/Icon.jsx";
+import IconFeature from "../../components/IconFeature.jsx";
 import {
   stockageYardImage,
   stockageFeatures,
+  stockageSteps,
+  stockageStorables,
+  stockageSecurity,
   company,
 } from "../../data/content.js";
 
@@ -65,6 +69,51 @@ export default function ServiceStockage() {
               </p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Comment ça marche ? */}
+      <section className="bg-cloud py-16">
+        <div className="container-page">
+          <h2 className="text-center text-2xl text-ink md:text-3xl">Comment ça marche ?</h2>
+          <div className="mx-auto mt-10 grid max-w-5xl grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-5">
+            {stockageSteps.map((step, i) => (
+              <div key={step.title} className="flex flex-col items-center text-center">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-brand font-heading text-sm font-bold text-white">
+                  {i + 1}
+                </div>
+                <p className="mt-4 font-heading text-sm font-bold text-ink">{step.title}</p>
+                <p className="mt-2 text-sm leading-relaxed text-ink/60">{step.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Ce qui peut être stocké */}
+      <section className="py-16">
+        <div className="container-page">
+          <h2 className="text-center text-2xl text-ink md:text-3xl">Ce qui peut être stocké</h2>
+          <div className="mt-12 grid grid-cols-2 gap-x-6 gap-y-12 sm:grid-cols-4">
+            {stockageStorables.map((item) => (
+              <IconFeature key={item.title} {...item} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Sécurité du site */}
+      <section className="bg-cloud py-16">
+        <div className="container-page">
+          <h2 className="text-center text-2xl text-ink md:text-3xl">Sécurité du site</h2>
+          <div className="mx-auto mt-10 flex max-w-2xl flex-col gap-4">
+            {stockageSecurity.map((item) => (
+              <div key={item} className="flex items-center gap-3">
+                <Icon name="check" className="h-5 w-5 shrink-0 text-brand" strokeWidth={1.75} />
+                <p className="text-sm leading-relaxed text-ink">{item}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

@@ -37,20 +37,25 @@ export default function About() {
           <div>
             <p className="eyebrow mb-3">À propos</p>
             <h2 className="text-2xl text-ink md:text-3xl">
-              Une nouvelle entreprise. Une expérience solidement ancrée dans le
+              Une entreprise créée pour répondre concrètement aux besoins du
               terrain.
             </h2>
             <p className="mt-5 text-base leading-relaxed text-ink">
-              Bien que nouvelle, notre société possède déjà une solide
-              expérience de son métier. Deux fondateurs, chacun professionnels
-              et expérimentés, unissent leurs forces pour proposer aux
-              particuliers et aux professionnels des solutions adaptées, fiables
-              et de qualité.
+              Global Services est née d’une conviction simple : les
+              particuliers, artisans et professionnels ont besoin d’un
+              interlocuteur unique et fiable pour leurs travaux de bennes,
+              terrassement, transport et stockage.
             </p>
             <p className="mt-4 text-base leading-relaxed text-ink">
-              15 à 18 ans d’expérience de terrain, une connaissance fine du
-              secteur et une envie commune : mettre ce savoir-faire au service
-              de nos clients dans le Loiret et partout en France.
+              Portée par deux fondateurs cumulant 15 ans d’expérience dans le
+              secteur, l’entreprise s’appuie sur une connaissance fine des
+              métiers du BTP et de la logistique pour proposer des solutions
+              adaptées, réactives et de qualité.
+            </p>
+            <p className="mt-4 text-base leading-relaxed text-ink">
+              Notre ambition : simplifier la gestion de vos chantiers en
+              réunissant plusieurs services essentiels sous un même toit, dans
+              le Loiret et partout en France.
             </p>
           </div>
         </div>

@@ -2,13 +2,11 @@ import { Link } from "react-router-dom";
 import Icon from "../components/Icon.jsx";
 import ServiceCard from "../components/ServiceCard.jsx";
 import IconFeature from "../components/IconFeature.jsx";
-import StatBar from "../components/StatBar.jsx";
 import CTABand from "../components/CTABand.jsx";
 import FranceMapCard from "../components/FranceMapCard.jsx";
 import {
   services,
   whyUs,
-  homeStats,
   heroImage,
   company,
 } from "../data/content.js";
@@ -35,11 +33,9 @@ export default function Home() {
           <p className="mt-6 max-w-xl text-base leading-relaxed text-white">
             Global Services accompagne les particuliers et les professionnels
             dans leurs besoins en location de bennes, terrassement, transport et
-            stockage.
-          </p>
-          <p className="mt-3 max-w-xl text-sm leading-relaxed text-white">
-            Une nouvelle entreprise, portée par deux professionnels disposant de
-            15 à 18 ans d’expérience dans le domaine.
+            stockage. Porté par deux professionnels cumulant 15 ans
+            d’expérience dans le domaine, Global Services met son savoir-faire
+            au service de vos chantiers, dans le Loiret et partout en France.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link to="/nos-services" className="btn btn-primary">
@@ -67,29 +63,25 @@ export default function Home() {
       </section>
 
       {/* Pourquoi choisir Global Services */}
-      <section className="bg-ink py-20">
+      <section className="relative bg-ink py-20">
         <div className="container-page">
-          <p className="eyebrow mb-3">Pourquoi choisir Global Services ?</p>
-          <div className="grid max-w-5xl grid-cols-1 items-center gap-8 text-center md:grid-cols-2 md:text-left">
-            <div>
-              <h2 className="text-3xl text-white md:text-4xl">
-                Une nouvelle entreprise. Une solide expérience du terrain.
-              </h2>
-            </div>
-            <div>
-              <p className="leading-relaxed text-white">
-                Deux professionnels avec 15 à 18 ans d’expérience chacun mettent
-                leur savoir-faire au service des particuliers et des
-                professionnels.
-              </p>
-            </div>
+          <div className="mx-auto max-w-2xl text-center">
+            <p className="eyebrow mb-3">Pourquoi choisir Global Services ?</p>
+            <h2 className="text-3xl text-white md:text-4xl">
+              Une solide expérience du terrain, au service de vos projets.
+            </h2>
+            <p className="mt-5 text-sm leading-relaxed text-white">
+              Deux professionnels avec 15 ans d’expérience chacun mettent leur
+              savoir-faire au service des particuliers et des professionnels.
+            </p>
           </div>
-          <div className="mt-14 grid grid-cols-2 gap-x-6 gap-y-12 md:grid-cols-5">
+          <div className="mt-14 grid grid-cols-2 gap-x-6 gap-y-12 sm:grid-cols-3 lg:grid-cols-6">
             {whyUs.map((item) => (
               <IconFeature key={item.title} {...item} dark />
             ))}
           </div>
         </div>
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-linear-to-b from-transparent to-white" />
       </section>
 
       {/* Le Loiret et partout en France */}
@@ -117,7 +109,6 @@ export default function Home() {
         </div>
       </section>
 
-      <StatBar stats={homeStats} />
       {/* <CTABand /> */}
     </>
   );

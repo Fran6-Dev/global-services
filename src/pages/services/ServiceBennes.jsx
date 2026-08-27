@@ -1,6 +1,6 @@
 import CTABand from '../../components/CTABand.jsx'
 import Icon from '../../components/Icon.jsx'
-import { bennesImage, bennesSizes, wasteAccepted } from '../../data/content.js'
+import { bennesImage, bennesSizes, wasteAccepted, wasteRefused, bennesSteps } from '../../data/content.js'
 
 export default function ServiceBennes() {
   return (
@@ -48,6 +48,24 @@ export default function ServiceBennes() {
         </div>
       </section>
 
+      {/* Comment ça marche ? */}
+      <section className="py-16">
+        <div className="container-page">
+          <h2 className="text-center text-2xl text-ink md:text-3xl">Comment ça marche ?</h2>
+          <div className="mx-auto mt-10 grid max-w-5xl grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-5">
+            {bennesSteps.map((step, i) => (
+              <div key={step.title} className="flex flex-col items-center text-center">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-brand font-heading text-sm font-bold text-white">
+                  {i + 1}
+                </div>
+                <p className="mt-4 font-heading text-sm font-bold text-ink">{step.title}</p>
+                <p className="mt-2 text-sm leading-relaxed text-ink/60">{step.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Déchets acceptés */}
       <section className="py-16">
         <div className="container-page">
@@ -60,6 +78,24 @@ export default function ServiceBennes() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Déchets non acceptés */}
+      <section className="bg-cloud py-16">
+        <div className="container-page">
+          <h2 className="text-center text-2xl text-ink md:text-3xl">Déchets non acceptés</h2>
+          <div className="mx-auto mt-10 grid max-w-3xl grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3 lg:grid-cols-6">
+            {wasteRefused.map((w) => (
+              <div key={w.label} className="flex flex-col items-center gap-3 text-center">
+                <Icon name={w.icon} className="h-8 w-8 text-ink/40" strokeWidth={1.5} />
+                <p className="font-heading text-xs font-bold uppercase tracking-wide text-ink">{w.label}</p>
+              </div>
+            ))}
+          </div>
+          <p className="mx-auto mt-10 max-w-xl text-center text-sm leading-relaxed text-ink/60">
+            Un doute sur un type de déchet ? Contactez-nous, nous vous conseillons avant la livraison.
+          </p>
         </div>
       </section>
 
