@@ -75,7 +75,7 @@ export default function Home() {
               savoir-faire au service des particuliers et des professionnels.
             </p>
           </div>
-          <div className="mt-14 grid grid-cols-2 gap-x-6 gap-y-12 sm:grid-cols-3 lg:grid-cols-6">
+          <div className="mt-12 grid grid-cols-2 gap-x-6 gap-y-12 sm:grid-cols-3 lg:grid-cols-6">
             {whyUs.map((item) => (
               <IconFeature key={item.title} {...item} dark />
             ))}

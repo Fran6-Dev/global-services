@@ -67,7 +67,7 @@ export default function About() {
             <p className="text-3xl text-ink md:text-4xl other-title">NOS VALEURS</p>
             {/* <h2 className="text-3xl text-ink md:text-4xl">Ce qui nous porte au quotidien</h2> */}
           </div>
-          <div className="mt-8 grid grid-cols-2 gap-x-6 gap-y-12 md:grid-cols-5">
+          <div className="mt-12 grid grid-cols-2 gap-x-6 gap-y-12 md:grid-cols-5">
             {values.map((v) => (
               <IconFeature key={v.title} {...v} />
             ))}

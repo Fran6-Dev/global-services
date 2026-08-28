@@ -1,7 +1,6 @@
 # Global Services — site React
 
-Reproduction du template "Global Services" (bennes, terrassement, transport /
-élevage, stockage) en React + Vite + Tailwind CSS v4, avec toutes les pages et
+Reproduction du template "Global Services" (bennes, terrassement, transport, stockage) en React + Vite + Tailwind CSS v4, avec toutes les pages et
 la navigation (desktop + mobile, avec menu déroulant "Nos services").
 
 ## Démarrer le projet
@@ -41,7 +40,7 @@ export du site original), donc quelques détails sont **à confirmer** :
 
 - L'adresse exacte (`7 avenue des Acacias`, code postal / commune) dans
   `company` en haut de `src/data/content.js`.
-- Le libellé "En pirole" (solution de transport) — le mot exact était peu
+- Le libellé "Ampliroll" (solution de transport) — le mot exact était peu
   lisible sur la capture, à corriger si besoin.
 - Les réseaux sociaux du footer pointent vers des liens génériques
   (facebook.com, instagram.com, linkedin.com) : à remplacer par vos vraies
@@ -87,7 +86,7 @@ endroits à modifier sont clairement indiqués par un commentaire `NOTE:` dans
 | `/nos-services`                           | Nos services (vue d'ensemble) |
 | `/nos-services/location-de-bennes`        | Location de bennes           |
 | `/nos-services/terrassement`              | Terrassement                 |
-| `/nos-services/transport-elevage`         | Transport / Élevage          |
+| `/nos-services/transport`                 | Transport                    |
 | `/nos-services/stockage`                  | Stockage                     |
 | `/a-propos`                               | À propos                     |
 | `/realisations`                           | Réalisations (avec filtres)  |

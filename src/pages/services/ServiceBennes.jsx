@@ -67,7 +67,7 @@ export default function ServiceBennes() {
       </section>
 
       {/* Déchets acceptés */}
-      <section className="py-16">
+      <section className="bg-cloud py-16">
         <div className="container-page">
           <h2 className="text-center text-2xl text-ink md:text-3xl">Déchets acceptés</h2>
           <div className="mx-auto mt-10 grid max-w-3xl grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-5">
@@ -82,7 +82,7 @@ export default function ServiceBennes() {
       </section>
 
       {/* Déchets non acceptés */}
-      <section className="bg-cloud py-16">
+      <section className="py-16">
         <div className="container-page">
           <h2 className="text-center text-2xl text-ink md:text-3xl">Déchets non acceptés</h2>
           <div className="mx-auto mt-10 grid max-w-3xl grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3 lg:grid-cols-6">

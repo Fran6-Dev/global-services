@@ -15,13 +15,13 @@ export default function ServiceTransport() {
       <section className="py-14 md:py-20">
         <div className="container-page grid grid-cols-1 items-start gap-10 lg:grid-cols-2">
           <div>
-            <p className="eyebrow mb-3">Transport / Élevage</p>
+            <p className="eyebrow mb-3">Transport</p>
             <h1 className="text-3xl text-ink md:text-4xl">
               Le transport de vos engins et matériel
             </h1>
             <p className="mt-5 text-base leading-relaxed text-ink">
               Global Services propose des solutions de transport destinées aux
-              professionnels comme aux particuliers. BTP, agriculture, élevage
+              professionnels comme aux particuliers. BTP, agriculture, transport
               ou manutention : nous étudions votre besoin pour déterminer la
               solution la plus adaptée.
             </p>
@@ -47,13 +47,10 @@ export default function ServiceTransport() {
       <section className="pb-16">
         <div className="container-page">
           <h2 className="text-xl text-ink md:text-2xl">Nos solutions</h2>
-          <div className="mt-6 grid grid-cols-1 gap-10 lg:grid-cols-2">
-            <div className="flex flex-col gap-4">
-              {transportSolutions.map((t) => (
-                <div
-                  key={t.title}
-                  className="flex items-start gap-4 border border-mist p-5"
-                >
+          <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
+            {transportSolutions.map((t) => (
+              <div key={t.title} className="border border-mist p-5">
+                <div className="flex items-start gap-4">
                   <Icon
                     name={t.icon}
                     className="h-8 w-8 shrink-0 text-brand"
@@ -68,12 +65,7 @@ export default function ServiceTransport() {
                     </p>
                   </div>
                 </div>
-              ))}
-            </div>
-
-            <div className="flex flex-col gap-4">
-              {transportSolutions.map((t) => (
-                <div key={t.title} className="h-32 overflow-hidden">
+                <div className="mt-4 h-32 overflow-hidden">
                   <img
                     src={t.image}
                     alt={t.title}
@@ -81,8 +73,8 @@ export default function ServiceTransport() {
                     loading="lazy"
                   />
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

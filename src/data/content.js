@@ -31,7 +31,7 @@ export const nav = [
     children: [
       { label: 'Location de bennes', to: '/nos-services/location-de-bennes' },
       { label: 'Terrassement', to: '/nos-services/terrassement' },
-      { label: 'Transport / Élevage', to: '/nos-services/transport-elevage' },
+      { label: 'Transport', to: '/nos-services/transport' },
       { label: 'Stockage', to: '/nos-services/stockage' },
     ],
   },
@@ -69,15 +69,15 @@ export const services = [
     ctaLabel: 'Demander un devis',
   },
   {
-    slug: 'transport-elevage',
-    title: 'Transport / Élevage',
+    slug: 'transport',
+    title: 'Transport',
     short: 'Porte-plateau, grue, plateau-remorque',
-    detail: 'Remorque bâchée, en pirole',
-    to: '/nos-services/transport-elevage',
+    detail: 'Remorque bâchée, ampliroll',
+    to: '/nos-services/transport',
     image: "https://res.cloudinary.com/jqfwkgp1/image/upload/v1787679524/forestier05.jpg",
     icon: 'transport',
     subtitle: 'Transporter vos engins et votre matériel',
-    bulletList: ['Porte-plateau', 'Grue', 'Plateau-remorque', 'Remorque bâchée en pirole'],
+    bulletList: ['Porte-plateau', 'Grue', 'Plateau-remorque', 'Remorque bâchée ampliroll'],
     ctaLabel: 'Demander un devis',
   },
   {
@@ -322,7 +322,7 @@ export const transportSolutions = [
     image: img('tarp,trailer,truck', 700, 500, 24),
   },
   {
-    title: 'En pirole',
+    title: 'Ampliroll',
     text: 'Solution de transport adaptée à certains matériels spécifiques.',
     icon: 'pirole',
     image: img('livestock,trailer,truck', 700, 500, 25),

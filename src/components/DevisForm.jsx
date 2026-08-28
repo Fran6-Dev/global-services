@@ -15,7 +15,7 @@ const initial = {
 const prestations = [
   'Location de bennes',
   'Terrassement',
-  'Transport / Élevage',
+  'Transport',
   'Stockage',
   'Autre / plusieurs prestations',
 ]

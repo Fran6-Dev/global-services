@@ -6,7 +6,7 @@ const initial = { name: '', phone: '', email: '', service: '', message: '' }
 const serviceOptions = [
   'Location de bennes',
   'Terrassement',
-  'Transport / Élevage',
+  'Transport',
   'Stockage',
   'Plusieurs services',
   'Autre demande',
