@@ -16,8 +16,8 @@ export const company = {
   name: 'Global Services',
   phone: '07 85 65 65 00',
   email: 'contact@globalservices.fr',
-  address: '7 avenue des Acacias',
-  postal: '45790 Corquilleroy',
+  address: '5 avenue des Acacias',
+  postal: '45120 Cepoy',
   hoursWeek: 'Lundi - Vendredi : 7h00 - 18h00',
   hoursSat: 'Samedi : 7h00 - 12h00',
   city: 'Loiret',
@@ -41,43 +41,43 @@ export const nav = [
 ]
 
 export const services = [
-  {
-    slug: 'location-de-bennes',
-    title: 'Location de bennes',
-    short: '12 bennes disponibles',
-    detail: '5 de 10 m³, 4 de 7 m³, 3 de 20 m³',
-    to: '/nos-services/location-de-bennes',
-    image: 'https://res.cloudinary.com/jqfwkgp1/image/upload/v1787679525/pexels-jan-van-der-wolf-11680885-33842119.jpg',
-    icon: 'benne',
-    // used on the /nos-services overview page:
-    subtitle: '12 bennes à votre disposition',
-    factsText: '5 bennes de 10 m³, 4 bennes de 7 m³, 3 bennes de 20 m³.',
-    description: 'Nous acceptons : gravats, DIB, déchets de chantier, déchets issus de travaux et d’évacuation.',
-    ctaLabel: 'Demander un devis',
-  },
-  {
-    slug: 'terrassement',
-    title: 'Terrassement',
-    short: '3 pelles de 3,5 tonnes',
-    detail: '1 pelle de 6 tonnes',
-    to: '/nos-services/terrassement',
-    image: img('excavator,digger,construction', 900, 700, 12),
-    icon: 'pelle',
-    subtitle: 'Des équipements adaptés à vos travaux',
-    factsText: '3 pelles de 3,5 tonnes, 1 pelle de 6 tonnes.',
-    description: 'Préparation de terrain, fouilles, nivellement, tranchées et terrassement.',
-    ctaLabel: 'Demander un devis',
-  },
-  {
+    {
     slug: 'transport',
     title: 'Transport',
-    short: 'Porte-plateau, grue, plateau-remorque',
+    short: 'Porte-charre, camion grue, plateau-remorque',
     detail: 'Remorque bâchée, ampliroll',
     to: '/nos-services/transport',
     image: "https://res.cloudinary.com/jqfwkgp1/image/upload/v1787679524/forestier05.jpg",
     icon: 'transport',
     subtitle: 'Transporter vos engins et votre matériel',
-    bulletList: ['Porte-plateau', 'Grue', 'Plateau-remorque', 'Remorque bâchée ampliroll'],
+    bulletList: ['Porte-charre', 'Camion grue', 'Plateau-remorque', 'Remorque bâchée ampliroll'],
+    ctaLabel: 'Demander un devis',
+  },
+  {
+    slug: 'terrassement',
+    title: 'Terrassement',
+    short: 'Pelles de 3,5 tonnes',
+    detail: 'Pelles de 6 tonnes',
+    to: '/nos-services/terrassement',
+    image: "https://res.cloudinary.com/jqfwkgp1/image/upload/v1788366009/john-kakuk-HvvPceHYLOg-unsplash.jpg",
+    icon: 'pelle',
+    subtitle: 'Des équipements adaptés à vos travaux',
+    factsText: 'Pelles de 3,5 tonnes, pelles de 6 tonnes.',
+    description: 'Préparation de terrain, fouilles, nivellement, tranchées et terrassement.',
+    ctaLabel: 'Demander un devis',
+  },
+  {
+    slug: 'location-de-bennes',
+    title: 'Location de bennes',
+    short: 'Bennes disponibles',
+    detail: '10 m³, 7 m³,20 m³',
+    to: '/nos-services/location-de-bennes',
+    image: 'https://res.cloudinary.com/jqfwkgp1/image/upload/v1787679525/pexels-jan-van-der-wolf-11680885-33842119.jpg',
+    icon: 'benne',
+    // used on the /nos-services overview page:
+    subtitle: 'bennes à votre disposition',
+    factsText: 'bennes de 10 m³, bennes de 7 m³, bennes de 20 m³.',
+    description: 'Nous acceptons : gravats, DIB, déchets de chantier, déchets issus de travaux et d’évacuation.',
     ctaLabel: 'Demander un devis',
   },
   {
@@ -108,7 +108,7 @@ export const whyUs = [
   },
   {
     title: 'Expérience',
-    text: '15 ans d’expérience cumulée des fondateurs.',
+    text: '18 ans d’expérience des fondateurs.',
     icon: 'experience',
   },
   {
@@ -130,7 +130,7 @@ export const whyUs = [
 
 export const aboutStats = [
   { label: '4 métiers réunis', icon: 'polyvalence' },
-  { label: '15 ans d’expérience cumulée', icon: 'clock' },
+  { label: '18 ans d’expérience', icon: 'clock' },
   { label: 'Loiret et partout en France', icon: 'pin' },
   { label: 'Particuliers et professionnels', icon: 'users' },
 ]
@@ -212,14 +212,14 @@ export const bennesSteps = [
 ]
 
 export const bennesSizes = [
-  { size: '5 × 10 m³', text: 'Pour les volumes importants de déchets issus de vos chantiers.' },
-  { size: '4 × 7 m³', text: 'Le format le plus polyvalent, adapté à la majorité des besoins.' },
-  { size: '3 × 20 m³', text: 'Pour les gros chantiers nécessitant une plus grande capacité.' },
+  { size: '10 m³', text: 'Pour les volumes importants de déchets issus de vos chantiers.' },
+  { size: '7 m³', text: 'Le format le plus polyvalent, adapté à la majorité des besoins.' },
+  { size: '20 m³', text: 'Pour les gros chantiers nécessitant une plus grande capacité.' },
 ]
 
 export const excavators = [
-  { count: '3 pelles', size: '3,5 tonnes', text: 'Pour différents travaux de préparation de terrain.' },
-  { count: '1 pelle', size: '6 tonnes', text: 'Pour les travaux nécessitant davantage de puissance et de capacité.' },
+  { count: 'pelles', size: '3,5 tonnes', text: 'Pour différents travaux de préparation de terrain.' },
+  { count: 'pelles', size: '6 tonnes', text: 'Pour les travaux nécessitant davantage de puissance et de capacité.' },
 ]
 
 export const terrassementPrestations = [
@@ -240,7 +240,7 @@ export const terrassementPrestations = [
   },
   {
     title: 'Évacuation de terre',
-    text: 'Enlèvement et transport des déblais issus de vos travaux de terrassement.',
+    text: 'Enlèvement et transport des déchets.',
     icon: 'evacuation',
   },
 ]
@@ -260,11 +260,11 @@ export const terrassementSteps = [
   },
   {
     title: 'Intervention',
-    text: 'Nos équipes interviennent avec le matériel adapté (pelle de 3,5 ou 6 tonnes selon les besoins).',
+    text: 'Nos équipes interviennent avec le matériel adapté (selon les besoins).',
   },
   {
     title: 'Finition et remise en état',
-    text: 'Le terrain est livré prêt à l’emploi pour la suite de votre projet.',
+    text: 'Le terrain est livré prêt à l’utilisation pour la suite de votre projet.',
   },
 ]
 
@@ -298,16 +298,16 @@ export const terrassementSols = [
 
 export const transportSolutions = [
   {
-    title: 'Porte-plateau',
+    title: 'Porte-charre',
     text: 'Pour le transport d’engins et d’équipements lourds nécessitant un plateau adapté.',
     icon: 'porteplateau',
     image: img('flatbed,truck,machinery', 700, 500, 21),
   },
   {
-    title: 'Grue',
+    title: 'Camion grue',
     text: 'Pour le chargement, le déchargement et le transport de certains équipements.',
     icon: 'grue',
-    image: img('crane,truck,lifting', 700, 500, 22),
+    image: 'https://res.cloudinary.com/jqfwkgp1/image/upload/v1788365306/WhatsApp_Image_2026-09-02_at_18.07.45.jpg',
   },
   {
     title: 'Plateau-remorque',
@@ -325,7 +325,7 @@ export const transportSolutions = [
     title: 'Ampliroll',
     text: 'Solution de transport adaptée à certains matériels spécifiques.',
     icon: 'pirole',
-    image: img('livestock,trailer,truck', 700, 500, 25),
+    image: "https://res.cloudinary.com/jqfwkgp1/image/upload/v1788366713/Camion-6x4-ampliroll-polybras.webp",
   },
 ]
 
@@ -364,7 +364,7 @@ export const transportSteps = [
   },
   {
     title: 'Étude de votre demande',
-    text: 'Nous identifions la solution de transport la plus adaptée (porte-plateau, grue, remorque bâchée...).',
+    text: 'Nous identifions la solution de transport la plus adaptée (porte-charre, camion grue, remorque bâchée...).',
   },
   {
     title: 'Devis et planification',
@@ -452,10 +452,10 @@ export const galleryCategories = ['Tous', 'Bennes', 'Terrassement', 'Transport',
 
 export const galleryItems = [
   { id: 1, category: 'Bennes', image: img('dumpster,container,site', 700, 550, 31), title: 'Évacuation de gravats' },
-  { id: 2, category: 'Terrassement', image: img('excavator,digging,soil', 700, 550, 32), title: 'Préparation de terrain' },
+  { id: 2, category: 'Terrassement', image: "https://res.cloudinary.com/jqfwkgp1/image/upload/v1788366009/john-kakuk-HvvPceHYLOg-unsplash.jpg", title: 'Préparation de terrain' },
   { id: 3, category: 'Transport', image: img('truck,convoy,road', 700, 550, 33), title: 'Transport de matériel' },
   { id: 4, category: 'Bennes', image: img('waste,container,yard', 700, 550, 34), title: 'Bennes sur chantier' },
-  { id: 5, category: 'Terrassement', image: img('excavator,yellow,dirt', 700, 550, 35), title: 'Travaux de terrassement' },
+  { id: 5, category: 'Terrassement', image: "https://res.cloudinary.com/jqfwkgp1/image/upload/v1788366009/john-kakuk-HvvPceHYLOg-unsplash.jpg", title: 'Travaux de terrassement' },
   { id: 6, category: 'Stockage', image: img('storage,lot,trucks', 700, 550, 36), title: 'Espace de stockage' },
 ]
 
@@ -469,5 +469,5 @@ export const devisHeroImage = img('excavator,construction,site', 1600, 700, 7)
 export const aboutTeamImage = "https://res.cloudinary.com/jqfwkgp1/image/upload/v1787679524/pexels-kindelmedia-8487733.jpg"
 export const stockageYardImage = "https://res.cloudinary.com/jqfwkgp1/image/upload/v1787679525/pexels-marcin-jozwiak-199600-2804929.jpg"
 export const bennesImage = "https://res.cloudinary.com/jqfwkgp1/image/upload/v1787679525/pexels-jan-van-der-wolf-11680885-33842119.jpg"
-export const terrassementImage = img('excavator,digger,construction,site', 1000, 800, 15)
+export const terrassementImage = "https://res.cloudinary.com/jqfwkgp1/image/upload/v1788366009/john-kakuk-HvvPceHYLOg-unsplash.jpg"
 export const transportImage = "https://res.cloudinary.com/jqfwkgp1/image/upload/v1787679524/forestier05.jpg"

@@ -33,7 +33,7 @@ export default function Home() {
           <p className="mt-6 max-w-xl text-base leading-relaxed text-white">
             Global Services accompagne les particuliers et les professionnels
             dans leurs besoins en location de bennes, terrassement, transport et
-            stockage. Porté par deux professionnels cumulant 15 ans
+            stockage. Porté par deux professionnels de 18 ans
             d’expérience dans le domaine, Global Services met son savoir-faire
             au service de vos chantiers, dans le Loiret et partout en France.
           </p>
@@ -71,7 +71,7 @@ export default function Home() {
               Une solide expérience du terrain, au service de vos projets.
             </h2>
             <p className="mt-5 text-sm leading-relaxed text-white">
-              Deux professionnels avec 15 ans d’expérience chacun mettent leur
+              Deux professionnels avec 18 ans d’expérience chacun mettent leur
               savoir-faire au service des particuliers et des professionnels.
             </p>
           </div>

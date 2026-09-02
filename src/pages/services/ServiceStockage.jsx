@@ -72,10 +72,10 @@ export default function ServiceStockage() {
         </div>
       </section>
 
-      {/* Comment ça marche ? */}
+      {/* Marche à suivre */}
       <section className="bg-cloud py-16">
         <div className="container-page">
-          <h2 className="text-center text-2xl text-ink md:text-3xl">Comment ça marche ?</h2>
+          <h2 className="text-center text-2xl text-ink md:text-3xl">Marche à suivre</h2>
           <div className="mx-auto mt-10 grid max-w-5xl grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-5">
             {stockageSteps.map((step, i) => (
               <div key={step.title} className="flex flex-col items-center text-center">

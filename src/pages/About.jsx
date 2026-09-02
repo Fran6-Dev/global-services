@@ -47,7 +47,7 @@ export default function About() {
               terrassement, transport et stockage.
             </p>
             <p className="mt-4 text-base leading-relaxed text-ink">
-              Portée par deux fondateurs cumulant 15 ans d’expérience dans le
+              Portée par deux fondateurs de 18 ans d’expérience dans le
               secteur, l’entreprise s’appuie sur une connaissance fine des
               métiers du BTP et de la logistique pour proposer des solutions
               adaptées, réactives et de qualité.

@@ -33,12 +33,12 @@ export default function ServiceBennes() {
       {/* 12 bennes disponibles */}
       <section className="bg-cloud py-16">
         <div className="container-page">
-          <h2 className="text-center text-2xl text-ink md:text-3xl">12 bennes disponibles</h2>
+          <h2 className="text-center text-2xl text-ink md:text-3xl">Bennes disponibles</h2>
           <div className="mt-10 grid grid-cols-1 gap-10 sm:grid-cols-3">
             {bennesSizes.map((b) => (
               <div key={b.size} className="flex flex-col items-center text-center">
                 <p className="font-heading text-lg font-bold text-ink">{b.size}</p>
-                <div className="mt-4 h-36 w-full overflow-hidden">
+                <div className="mt-4 h-80 w-full overflow-hidden">
                   <img src={bennesImage} alt={b.size} className="h-full w-full object-cover" loading="lazy" />
                 </div>
                 <p className="mt-4 text-sm leading-relaxed text-ink/60">{b.text}</p>
@@ -48,10 +48,10 @@ export default function ServiceBennes() {
         </div>
       </section>
 
-      {/* Comment ça marche ? */}
+      {/* Marche à suivre */}
       <section className="py-16">
         <div className="container-page">
-          <h2 className="text-center text-2xl text-ink md:text-3xl">Comment ça marche ?</h2>
+          <h2 className="text-center text-2xl text-ink md:text-3xl">Marche à suivre</h2>
           <div className="mx-auto mt-10 grid max-w-5xl grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-5">
             {bennesSteps.map((step, i) => (
               <div key={step.title} className="flex flex-col items-center text-center">
@@ -70,7 +70,7 @@ export default function ServiceBennes() {
       <section className="bg-cloud py-16">
         <div className="container-page">
           <h2 className="text-center text-2xl text-ink md:text-3xl">Déchets acceptés</h2>
-          <div className="mx-auto mt-10 grid max-w-3xl grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-5">
+          <div className="mx-auto mt-10 grid max-w-3xl grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3 lg:grid-cols-6">
             {wasteAccepted.map((w) => (
               <div key={w.label} className="flex flex-col items-center gap-3 text-center">
                 <Icon name={w.icon} className="h-8 w-8 text-brand" strokeWidth={1.5} />

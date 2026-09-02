@@ -19,7 +19,7 @@ export default function ServiceTerrassement() {
             <p className="eyebrow mb-3">Terrassement</p>
             <h1 className="text-3xl text-ink md:text-4xl">Des moyens adaptés à vos travaux</h1>
             <p className="mt-5 text-base leading-relaxed text-ink">
-              Préparation de terrain, nivellement, fouilles, tranchées ou
+              Préparation de terrain, nivellement, fouilles, tranchées, bassin de piscine, allée pavé ou
               terrassement : Global Services met son expérience et ses
               équipements au service de vos projets.
             </p>
@@ -49,10 +49,10 @@ export default function ServiceTerrassement() {
         </div>
       </section>
 
-      {/* Comment ça marche ? */}
+      {/* Marche à suivre */}
       <section className="py-16">
         <div className="container-page">
-          <h2 className="text-center text-2xl text-ink md:text-3xl">Comment ça marche ?</h2>
+          <h2 className="text-center text-2xl text-ink md:text-3xl">Marche à suivre</h2>
           <div className="mx-auto mt-10 grid max-w-5xl grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-5">
             {terrassementSteps.map((step, i) => (
               <div key={step.title} className="flex flex-col items-center text-center">
@@ -89,24 +89,8 @@ export default function ServiceTerrassement() {
         </div>
       </section>
 
-      {/* Notre parc */}
       <section className="pb-16">
         <div className="container-page">
-          <h2 className="text-xl text-ink md:text-2xl">Notre parc</h2>
-          <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
-            {excavators.map((e) => (
-              <div key={e.size} className="border border-mist p-6">
-                <p className="font-heading text-lg font-bold uppercase text-ink">
-                  {e.count} de {e.size}
-                </p>
-                <div className="mt-4 h-40 overflow-hidden">
-                  <img src={terrassementImage} alt={`${e.count} de ${e.size}`} className="h-full w-full object-cover" loading="lazy" />
-                </div>
-                <p className="mt-4 text-sm leading-relaxed text-ink/60">{e.text}</p>
-              </div>
-            ))}
-          </div>
-
           {/* Notre approche */}
           <div className="mt-14 max-w-3xl">
             <h2 className="text-xl text-ink md:text-2xl">Notre approche</h2>

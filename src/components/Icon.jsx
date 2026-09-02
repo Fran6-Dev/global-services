@@ -47,6 +47,7 @@ import {
   Wheat,
   Armchair,
   PackagePlus,
+  Magnet,
 } from 'lucide-react'
 
 const MAP = {
@@ -106,6 +107,7 @@ const MAP = {
   agricole: Wheat,
   mobilier: Armchair,
   diverses: PackagePlus,
+  ferraille: Magnet,
 }
 
 export default function Icon({ name, className = 'h-6 w-6', strokeWidth = 1.75 }) {
