@@ -44,13 +44,13 @@ export const services = [
     {
     slug: 'transport',
     title: 'Transport',
-    short: 'Porte-charre, camion grue, plateau-remorque',
+    short: 'porte-char, camion grue, plateau-remorque',
     detail: 'Remorque bâchée, ampliroll',
     to: '/nos-services/transport',
     image: "https://res.cloudinary.com/jqfwkgp1/image/upload/v1787679524/forestier05.jpg",
     icon: 'transport',
     subtitle: 'Transporter vos engins et votre matériel',
-    bulletList: ['Porte-charre', 'Camion grue', 'Plateau-remorque', 'Remorque bâchée ampliroll'],
+    bulletList: ['porte-char', 'Camion grue', 'Plateau-remorque', 'Remorque bâchée ampliroll'],
     ctaLabel: 'Demander un devis',
   },
   {
@@ -298,7 +298,7 @@ export const terrassementSols = [
 
 export const transportSolutions = [
   {
-    title: 'Porte-charre',
+    title: 'porte-char',
     text: 'Pour le transport d’engins et d’équipements lourds nécessitant un plateau adapté.',
     icon: 'porteplateau',
     image: "https://res.cloudinary.com/jqfwkgp1/image/upload/v1788395194/porte-engins-bennes-la-campagne-scaled.jpg",
@@ -319,7 +319,7 @@ export const transportSolutions = [
     title: 'Remorque bâchée',
     text: 'Pour le transport de matériel nécessitant une protection contre les intempéries.',
     icon: 'remorquebachee',
-    image: "https://res.cloudinary.com/jqfwkgp1/image/upload/v1788395231/bache-remorque-haute-sur-mesure.jpg",
+    image: "https://res.cloudinary.com/jqfwkgp1/image/upload/v1788462197/planenauflieger-fuhrpark-vg-transporte.jpg",
   },
   {
     title: 'Ampliroll',
@@ -364,7 +364,7 @@ export const transportSteps = [
   },
   {
     title: 'Étude de votre demande',
-    text: 'Nous identifions la solution de transport la plus adaptée (porte-charre, camion grue, remorque bâchée...).',
+    text: 'Nous identifions la solution de transport la plus adaptée (porte-char, camion grue, remorque bâchée...).',
   },
   {
     title: 'Devis et planification',
