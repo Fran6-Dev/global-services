@@ -1,5 +1,6 @@
 import CTABand from '../../components/CTABand.jsx'
 import Icon from '../../components/Icon.jsx'
+import PhotoFade from '../../components/PhotoFade.jsx'
 import { bennesImage, bennesSizes, wasteAccepted, wasteRefused, bennesSteps } from '../../data/content.js'
 
 export default function ServiceBennes() {
@@ -19,13 +20,7 @@ export default function ServiceBennes() {
           </div>
           <div className="relative overflow-hidden">
   <img src={bennesImage} alt="Benne Global Services" className="h-full w-full object-cover" />
-  <div
-    className="pointer-events-none absolute inset-0"
-    style={{
-      background:
-        'linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0.95) 8%, rgba(255,255,255,0.8) 16%, rgba(255,255,255,0.55) 24%, rgba(255,255,255,0.3) 32%, rgba(255,255,255,0.12) 40%, rgba(255,255,255,0) 50%)',
-    }}
-  />
+  <PhotoFade direction="right" />
 </div>
         </div>
       </section>

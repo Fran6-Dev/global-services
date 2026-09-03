@@ -81,7 +81,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-linear-to-b from-transparent to-white" />
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-linear-to-b from-white/0 to-white" />
       </section>
 
       {/* Le Loiret et partout en France */}

@@ -301,7 +301,7 @@ export const transportSolutions = [
     title: 'Porte-charre',
     text: 'Pour le transport d’engins et d’équipements lourds nécessitant un plateau adapté.',
     icon: 'porteplateau',
-    image: img('flatbed,truck,machinery', 700, 500, 21),
+    image: "https://res.cloudinary.com/jqfwkgp1/image/upload/v1788395194/porte-engins-bennes-la-campagne-scaled.jpg",
   },
   {
     title: 'Camion grue',
@@ -313,13 +313,13 @@ export const transportSolutions = [
     title: 'Plateau-remorque',
     text: 'Polyvalent et adapté au transport de différentes charges.',
     icon: 'plateauremorque',
-    image: img('trailer,truck,cargo', 700, 500, 23),
+    image: "https://res.cloudinary.com/jqfwkgp1/image/upload/v1787679524/devin_225.jpg",
   },
   {
     title: 'Remorque bâchée',
     text: 'Pour le transport de matériel nécessitant une protection contre les intempéries.',
     icon: 'remorquebachee',
-    image: img('tarp,trailer,truck', 700, 500, 24),
+    image: "https://res.cloudinary.com/jqfwkgp1/image/upload/v1788395231/bache-remorque-haute-sur-mesure.jpg",
   },
   {
     title: 'Ampliroll',

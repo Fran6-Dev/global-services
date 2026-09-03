@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import Icon from '../../components/Icon.jsx'
 import IconFeature from '../../components/IconFeature.jsx'
+import PhotoFade from '../../components/PhotoFade.jsx'
 import {
   terrassementImage,
   excavators,
@@ -26,13 +27,7 @@ export default function ServiceTerrassement() {
           </div>
         <div className="relative overflow-hidden">
   <img src={terrassementImage} alt="Terrassement Global Services" className="h-full w-full object-cover" />
-  <div
-    className="pointer-events-none absolute inset-0"
-    style={{
-      background:
-        'linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0.95) 8%, rgba(255,255,255,0.8) 16%, rgba(255,255,255,0.55) 24%, rgba(255,255,255,0.3) 32%, rgba(255,255,255,0.12) 40%, rgba(255,255,255,0) 50%)',
-    }}
-  />
+  <PhotoFade direction="right" />
 </div>
         </div>
       </section>

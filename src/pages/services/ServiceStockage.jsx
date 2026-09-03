@@ -1,6 +1,7 @@
 import CTABand from "../../components/CTABand.jsx";
 import Icon from "../../components/Icon.jsx";
 import IconFeature from "../../components/IconFeature.jsx";
+import PhotoFade from "../../components/PhotoFade.jsx";
 import {
   stockageYardImage,
   stockageFeatures,
@@ -20,13 +21,7 @@ export default function ServiceStockage() {
     alt="Espace de stockage Global Services"
     className="absolute inset-0 h-full w-full object-cover"
   />
-  <div
-    className="pointer-events-none absolute inset-0"
-    style={{
-      background:
-        'linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0.95) 20%, rgba(255,255,255,0.75) 38%, rgba(255,255,255,0.4) 55%, rgba(255,255,255,0.12) 70%, rgba(255,255,255,0) 85%)',
-    }}
-  />
+  <PhotoFade direction="right" extent={85} />
   <div className="container-page relative py-16">
     <div className="max-w-xl">
       <p className="eyebrow mb-3">Stockage</p>

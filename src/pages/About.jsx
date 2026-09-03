@@ -2,6 +2,7 @@ import PageHeader from "../components/PageHeader.jsx";
 import CTABand from "../components/CTABand.jsx";
 import IconFeature from "../components/IconFeature.jsx";
 import StatBar from "../components/StatBar.jsx";
+import PhotoFade from "../components/PhotoFade.jsx";
 import {
   aboutHeroImage,
   aboutTeamImage,
@@ -26,13 +27,7 @@ export default function About() {
               alt="L'équipe Global Services"
               className="h-[420px] w-full object-cover md:h-[520px]"
             />
-            <div
-              className="pointer-events-none absolute inset-0"
-              style={{
-                background:
-                  "linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(255,255,255,0.95) 8%, rgba(255,255,255,0.8) 16%, rgba(255,255,255,0.55) 24%, rgba(255,255,255,0.3) 32%, rgba(255,255,255,0.12) 40%, rgba(255,255,255,0) 50%)",
-              }}
-            />
+            <PhotoFade direction="left" />
           </div>
           <div>
             <p className="eyebrow mb-3">À propos</p>
