@@ -29,9 +29,9 @@ export const nav = [
     label: 'Nos services',
     to: '/nos-services',
     children: [
-      { label: 'Location de bennes', to: '/nos-services/location-de-bennes' },
-      { label: 'Terrassement', to: '/nos-services/terrassement' },
       { label: 'Transport', to: '/nos-services/transport' },
+      { label: 'Terrassement', to: '/nos-services/terrassement' },
+      { label: 'Location de bennes', to: '/nos-services/location-de-bennes' },
       { label: 'Stockage', to: '/nos-services/stockage' },
     ],
   },
@@ -177,6 +177,7 @@ export const wasteAccepted = [
   { label: 'Déchets de chantier', icon: 'chantier' },
   { label: 'Déchets issus de travaux', icon: 'chantier' },
   { label: 'Déchets d’évacuation', icon: 'evacuation' },
+  { label: 'Ferraille', icon: 'ferraille' },
 ]
 
 export const wasteRefused = [
